@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio Webpage</title>
+
+<style>
+html {
+	  scroll-behavior: smooth;
+	}
+	
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	}
+
+h1 {
+	font-size: 35px;
+	padding-top: 250px;
+	}
+	
+h2 {
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 100;
+	}
+
+h3 {
+	font-size: 20px;
+	}
+
+a {
+	font-weight: 500;
+	text-decoration: none;
+	}
+	
+a:link {
+	color:#32655E
+	}
+
+a:hover {
+	color: #666;	
+	}
+
+a:visited {
+	color: #666;		
+	}
+	
+a:active {
+	color: #666;	
+	}
+
+
+#wrapper {
+	text-align: center;
+	margin: 0px;
+	}
+
+#projects-section, #contact-section {
+	margin-top: 50px;
+	clear:both;
+	}
+
+	
+#header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	}
+
+#navbar {
+	padding: 10px;
+	background-color:#fff;
+	}
+	
+.nav-link {
+	padding-right: 20px;
+	}
+	
+#welcome-section {
+	background-color: #C6E3DF;
+    height: 100vh;
+
+}
+
+
+.project-tile {
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	}
+
+.project-image {
+	width: 225px;
+	height: auto;
+	}
+	
+.project-captions {
+	font-style: italic;
+	}	
+
+#contact {
+	
+	}
+
+#contact-form {
+	display: block;
+	}
+	
+#name, #email {
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	width: 250px;
+	}	
+
+#submit_btn {
+	padding: 10px;
+	background-color: #C6E3DF;
+	}
+	
+#profile-link {
+	margin: 0 30px;
+	}
+
+#footer {
+	background-color: #C6E3DF;
+	padding: 10px;
+	text-align:left;
+	font-size: 12px;
+	}
+	
+@media (max-width: 920px) {
+.project-tile {
+   margin-right: 10%;
+	}
+}
+
+@media (max-width: 768px) {
+.project-tile {
+	width: 100%
+	}	
+	}
+	
+</style>
+
+</head>
+<body>
+<section id="wrapper">
+<header id="header">
+    <nav id="navbar">
+    <a href="#welcome-section" class="nav-link">home</a>
+    <a href="#projects-section" class="nav-link">projects</a>
+    <a href="#contact-section" class="nav-link">contact</a>        
+    </nav>
+</header>
+
+<main>
+    <section id="welcome-section">
+        <h1>Hi, I'm Lovey</h1>
+        <h2>NY Freelance Web Developer & Designer with 9 years of experience</h2>
+    </section>
+    
+    <section id="projects-section">
+    <h3>Projects</h3>
+    <div id="project-flex">
+		<figure class="project-tile">
+       	  <a href="http://www.expansivedesigns.com/projects/codecamp/tributepage/michelleobamastributepage.html"><img src="http://www.expansivedesigns.com/projects/codecamp/portfolio/images/tibutepage_thumbnail.jpg" width="1893" height="1080" class="project-image"/></a>
+        <figcaption class="project-captions">Tribute Page project </figcaption>
+      </figure>    
+    
+    	<figure class="project-tile">
+        	<a href="http://www.expansivedesigns.com/projects/codecamp/landingpage/scent.html"><img class="project-image" src="http://expansivedesigns.com/projects/codecamp/portfolio/images/scent_thumbnail.jpg"/></a>
+        <figcaption>Product Landing project</figcaption>
+      </figure>
+
+		<figure class="project-tile">
+        	<a href="http://www.expansivedesigns.com/projects/codecamp/buildasurvey/learnwebdevelopment.html"><img class="project-image" src="http://expansivedesigns.com/projects/codecamp/portfolio/images/learnwebdevelopment_thumbnail.jpg"/></a>
+        <figcaption>Survey Form project</figcaption>
+      </figure>
+
+		<figure class="project-tile">
+        	<a href="http://www.expansivedesigns.com/projects/codecamp/documentationpage/html5documentation.html"><img class="project-image" src="http://expansivedesigns.com/projects/codecamp/portfolio/images/html5documentation_thumbnail.jpg"/></a>
+        <figcaption>HTML5 Documentation project</figcaption>
+        </figure>   
+    </div> 
+    </section>
+    
+    <section id="contact-section">
+    	<form id="contact-form">
+        	<h3>Let's start a project!</h3>
+            <input type="text" name="name" id="name" placeholder="Your full name.">
+            <input type="email" name="email" id="email" placeholder="Email address.">
+            <input type="submit" id="submit_btn" value="Submit">
+        </form>    
+    </section>
+    
+    <section id="profile-link">
+    <p>I'm constantly working to update and refine my coding skills.  Please <a style="text-decoration: underline" href="https://www.freecodecamp.org/expansivedesigns">visit my freecodecamp profile</a> to see some of the projects I'm working on.  Also, <a style="text-decoration: underline" href="http://www.expansivedesigns.com">visit my personal website</a> to view all my past work for clients.</hp>
+
+    </section>
+    
+</main>
+</wrapper>
+<footer id="footer">Copyright &copy;2019. For educational purposes only.</footer>
+
+</body>
+</html>
